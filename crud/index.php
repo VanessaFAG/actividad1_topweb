@@ -3,7 +3,7 @@ include '../header/header.php';
 require_once '../conexion.php';
 
 // Consulta para obtener los actores
-$stmt = $pdo->query("SELECT * FROM actor ORDER BY last_update DESC LIMIT 20"); // Limitamos a 20 para el ejemplo
+$stmt = $pdo->query("SELECT * FROM actor ORDER BY last_update DESC LIMIT 20");
 $actores = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 

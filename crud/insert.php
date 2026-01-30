@@ -4,7 +4,7 @@ require_once '../conexion.php';
 
 // Procesar el formulario
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nombre = strtoupper($_POST['first_name']); // Sakila suele usar mayúsculas
+    $nombre = strtoupper($_POST['first_name']);
     $apellido = strtoupper($_POST['last_name']);
 
     $sql = "INSERT INTO actor (first_name, last_name) VALUES (:nom, :ape)";

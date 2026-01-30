@@ -31,8 +31,8 @@ $actores = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <td><?php echo htmlspecialchars($actor['last_name']); ?></td>
                 <td><?php echo $actor['last_update']; ?></td>
                 <td>
-                    <a href="editar.php?id=<?php echo $actor['actor_id']; ?>" class="btn btn-warning btn-sm">Editar</a>
-                    <a href="eliminar.php?id=<?php echo $actor['actor_id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro?');">Eliminar</a>
+                    <a href="update.php?id=<?php echo $actor['actor_id']; ?>" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="delete.php?id=<?php echo $actor['actor_id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro?');">Eliminar</a>
                 </td>
             </tr>
             <?php endforeach; ?>

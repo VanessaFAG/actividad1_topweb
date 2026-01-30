@@ -23,8 +23,6 @@ if (isset($_GET['accion']) && $_GET['accion'] == 'login') {
         header("Location: index.php?error=datos_incorrectos");
         exit;
     }
-    ========================================================================= */
-    // Modo desarrollo: aceptamos cualquier email y password
     $_SESSION['usuario_id'] = 999; 
     $_SESSION['email'] = $email; 
     $_SESSION['nombre'] = "Tester (Modo Desarrollo)";
